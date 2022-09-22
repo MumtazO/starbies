@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Favourites from './pages/Favourites';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,7 +20,8 @@ root.render(
     <Route path="/" element={<Layout />}>
     <Route path="about" element={<About />} />
     <Route path="privacypolicy" element={<PrivacyPolicy />} />
-      </Route>
+    <Route path="favourites" element={<Favourites/>} />
+    </Route>
     </Routes>
   </BrowserRouter>
   </React.StrictMode>
