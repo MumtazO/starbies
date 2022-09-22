@@ -3,7 +3,8 @@ import Footer from "../components/Footer.js"
 
 const Layout = () =>{
     return (
-        <>
+        <>  
+            
         <Footer/>
         <Outlet/>
         </>
