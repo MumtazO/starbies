@@ -1,8 +1,8 @@
 import "./privacypolicy.css"
 function PrivacyPolicy(){
     return(
-        <>
-        <h1 className="header">Privacy Policy</h1>
+        <main className="privacy-main">
+        <h1 className="header-privacy">Privacy Policy</h1>
         <br/>
         <p>One of our main priorities is the privacy of our visitors. 
         This Privacy Policy document contains types of information that is collected and 
@@ -78,7 +78,7 @@ function PrivacyPolicy(){
         our website, we strongly encourage you to contact us immediately and we will do our best efforts 
         to promptly remove such information from our records. If you have any questions about this Privacy 
         Policy, please contact us.</p>
-        </>
+        </main>
     )
 }
 
