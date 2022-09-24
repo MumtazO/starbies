@@ -15,3 +15,12 @@ code {
 .font-link {
   font-family: 'Abril Fatface', cursive;
 }
+.chakra-ui-light {
+  height: 1400px;
+  background-color: white;
+  background-image:
+    radial-gradient(
+      #9973F0,
+      white
+    );
+}
