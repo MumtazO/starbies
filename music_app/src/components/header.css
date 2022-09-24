@@ -1,11 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
 .Header {
   text-align: center;
   font-size: 45px;
   color: black;
+  position:fixed;
+  width:100%;
 }
 
 .straighlineheader {
