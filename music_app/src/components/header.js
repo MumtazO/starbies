@@ -16,12 +16,14 @@ function Header() {
         <Link to="/favourites">
           <BsFillPersonFill />
         </Link>
-      </span>
-      <h1>MUSIC</h1>
-      <input placeholder="search for your faves..." />
+        </span>
+      <input type="text" width="50px"/>
+      <h1 className="app-name">Canticum</h1>
     </div>
     </main>
   );
 }
 
 export default Header;
+
+//  
