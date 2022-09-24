@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .Header {
   text-align: center;
   font-size: 45px;
@@ -7,19 +11,45 @@
 .straighlineheader {
   display: flex;
   flex-direction: row;
+  background-color: #A786F5;
+  align-items: center;
   justify-content: space-evenly;
-  background-color: #9973F0;
 }
 
+
 input {
-  background-color: #9973F0;
+background-color: #C3AEF5;
+box-sizing: border-box;
+
+position: inherit;
+width: 381px;
+height: 39px;
+left: 500px;
+top: 15px;
+
+background: #E2EAFC;
+border: 1px solid #FFFFFF;
+backdrop-filter: blur(2px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 5px;
 }
 
 .icons {
-  margin-top: 10px;
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
+  padding-left: 30px;
+  color:  #6446aa;
+ 
 }
+
+
+
+.app-name{
+  font-family: 'Lobster', cursive;
+  color: #6446aa;
+} 
 
 
 
