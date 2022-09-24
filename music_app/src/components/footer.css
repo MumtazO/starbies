@@ -6,7 +6,10 @@
     background-color: #9973F0;
     color: black;
     text-align: center;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight:100;
   }
 
 
