@@ -1,5 +1,8 @@
 import "./homepage.css";
-import { Grid, GridItem } from '@chakra-ui/react';
+import { SimpleGrid } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
+import { Button} from '@chakra-ui/react'
+
 
 
 
@@ -7,14 +10,20 @@ import { Grid, GridItem } from '@chakra-ui/react';
 function HomePage () {
     return ( 
         <div className="album">
-            <Grid templateColumns='repeat(3, 1fr)' 
-            gap={10} marginEnd={25} marginStart={20}>
-            <GridItem w='300px' h='200' bg='blue.500'/>
-            <GridItem w='300px' h='200' bg='blue.500' />
-            <GridItem w='300px' h='200' bg='blue.500' />
-            </Grid>
+            <SimpleGrid columns={3} gap={10} marginEnd={25} marginStart={20} >
+            <Box bg='tomato' height='200px'>
+                <Button>Songs</Button>
+            </Box>
+            <Box bg='tomato' height='200px'>
+            <Button>Songs</Button>
+            </Box>
+            <Box bg='tomato' height='200px'>
+            <Button>Songs</Button>
+            </Box>
+            </SimpleGrid>
         </div>
      );
 }
 
 export default HomePage;
+
