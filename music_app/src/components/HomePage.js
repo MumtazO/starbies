@@ -1,6 +1,6 @@
-import "./DisplayAlbum.css"
+import "./HomePage.css"
 
-function DisplayAlbum () {
+function HomePage () {
     return ( 
         <div classname="album">
             <p></p>
@@ -8,4 +8,4 @@ function DisplayAlbum () {
      );
 }
 
-export default DisplayAlbum;
+export default HomePage;

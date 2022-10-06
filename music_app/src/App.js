@@ -1,10 +1,10 @@
-import DisplayAlbum
- from "./components/DisplayAlbum";
+import HomePage
+ from "./components/HomePage";
  
 function App() {
   return (
     <main className="app">
-   <DisplayAlbum />
+   <HomePage />
     </main>
   );
 }
