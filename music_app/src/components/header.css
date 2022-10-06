@@ -2,8 +2,10 @@
   text-align: center;
   font-size: 45px;
   color: black;
-  position:fixed;
   width:100%;
+  position: fixed; /*(recomended)*/
+  top: 0;
+ 
 }
 
 .straighlineheader {
@@ -12,6 +14,7 @@
   background-color: #A786F5;
   align-items: center;
   justify-content: space-evenly;
+  
 }
 
 
@@ -31,6 +34,7 @@ backdrop-filter: blur(2px);
 /* Note: backdrop-filter has minimal browser support */
 
 border-radius: 5px;
+
 }
 
 .icons {
@@ -47,6 +51,7 @@ border-radius: 5px;
 .app-name{
   font-family: 'Lobster', cursive;
   color: #6446aa;
+  
 } 
 
 
