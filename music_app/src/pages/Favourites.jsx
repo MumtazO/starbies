@@ -26,7 +26,6 @@ function Favourites () {
           <li>song</li>
       </ol>
     </div>
-            <h1 className="favourites-page">favourites page</h1>
             <Box 
             className="music-player"
             bg={[
@@ -50,6 +49,7 @@ function Favourites () {
             />
             </Box>
         </div>
+
     );
 }
  export default Favourites;
