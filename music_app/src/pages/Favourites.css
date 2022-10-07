@@ -1,0 +1,22 @@
+.favourites-page {
+    padding-top: 100px;
+}
+
+.album-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.album-details {
+    
+}
+
+.track-list {
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+
+#h1{
+    font-weight: bold;
+}
