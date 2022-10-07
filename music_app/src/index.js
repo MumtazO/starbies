@@ -11,6 +11,8 @@ import reportWebVitals from './reportWebVitals';
 import Favourites from './pages/Favourites';
 import HomePage from './pages/HomePage';
 
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
       <ChakraProvider>
@@ -28,6 +30,7 @@ root.render(
   </BrowserRouter>
   </React.StrictMode>
       </ChakraProvider>
+    
 );
 
 // If you want to start measuring performance in your app, pass a function
