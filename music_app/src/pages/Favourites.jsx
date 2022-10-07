@@ -2,9 +2,30 @@
 import "./favourites.css"
 import { Box } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
+import { Divider } from "@chakra-ui/react";
+import "./favourites.css";
+import { HiPhotograph } from "react-icons/hi";
 function Favourites () {
     return (  
         <div>
+        <div className="favourites-page">
+    <div className="album-header">
+      <HiPhotograph size={80} />
+      <div className="album-details">
+      <h1>album name</h1>
+      <p>artist name, year</p>
+      </div>
+      </div>
+      <Divider borderColor="#9973F0" />
+      <ol className="track-list">
+          <li>song</li>
+          <li>song</li>
+          <li>song</li>
+          <li>song</li>
+          <li>song</li>
+          <li>song</li>
+      </ol>
+    </div>
             <h1 className="favourites-page">favourites page</h1>
             <Box 
             className="music-player"
@@ -30,33 +51,6 @@ function Favourites () {
             </Box>
         </div>
     );
-
-import { Divider } from "@chakra-ui/react";
-import "./Favourites.css";
-import { HiPhotograph } from "react-icons/hi";
-
-function Favourites() {
-  return (
-    <div className="favourites-page">
-    <div className="album-header">
-      <HiPhotograph size={80} />
-      <div className="album-details">
-      <h1>album name</h1>
-      <p>artist name, year</p>
-      </div>
-      </div>
-      <Divider borderColor="#9973F0" />
-      <ol className="track-list">
-          <li>song</li>
-          <li>song</li>
-          <li>song</li>
-          <li>song</li>
-          <li>song</li>
-          <li>song</li>
-      </ol>
-    </div>
-  );
-
 }
-
-export default Favourites;
+ export default Favourites;
+  
