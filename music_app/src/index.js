@@ -9,6 +9,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Favourites from './pages/Favourites';
+import HomePage from './pages/HomePage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
         <App />
     <Routes>
     <Route path="/" element={<Layout />}>
+    <Route path="/" element={<HomePage />}/>
     <Route path="about" element={<About />} />
     <Route path="privacypolicy" element={<PrivacyPolicy />} />
     <Route path="favourites" element={<Favourites/>} />

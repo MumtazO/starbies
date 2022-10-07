@@ -1,8 +1,6 @@
 import "./HomePage.css";
-import { chakra, SimpleGrid } from '@chakra-ui/react'
+import { SimpleGrid } from '@chakra-ui/react'
 import { Box } from '@chakra-ui/react'
-import { Button} from '@chakra-ui/react'
-import { TiArrowRightOutline} from 'react-icons/ti'
 import { Link } from "react-router-dom";
 
 
