@@ -10,6 +10,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Favourites from './pages/Favourites';
 import HomePage from './pages/HomePage';
+import Login from './pages/Login';
 
 
 
@@ -21,7 +22,8 @@ root.render(
         <App />
     <Routes>
     <Route path="/" element={<Layout />}>
-    <Route path="/" element={<HomePage />}/>
+    <Route path="/" element={<Login />}/>
+    <Route path="/homepage" element={<HomePage />}/>
     <Route path="about" element={<About />} />
     <Route path="privacypolicy" element={<PrivacyPolicy />} />
     <Route path="favourites" element={<Favourites/>} />
