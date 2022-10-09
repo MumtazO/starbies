@@ -6,9 +6,10 @@ import { Link } from "react-router-dom";
 
 
 
-function HomePage () {
+function HomePage ({code}) {
     return ( 
         <div className="album">
+        <div>{code}</div>
             <SimpleGrid columns={3} gap={10} marginEnd={25} marginStart={20}
             >
 
