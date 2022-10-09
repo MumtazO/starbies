@@ -1,10 +1,13 @@
-import HomePage from "./pages/HomePage"
-import Login from "./pages/Login"
+// import HomePage from "./pages/HomePage"
+// import Login from "./pages/Login"
 
-const code = new URLSearchParams(window.location.search).get('code')
+
 
 function App() {
-    return code ? <HomePage code={code}/> : <Login/>
+    return (<>
+    </>)
 }
 
 export default App;
+
+//code ? <HomePage/> : <Login/>

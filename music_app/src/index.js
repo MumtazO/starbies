@@ -17,7 +17,6 @@ import Login from './pages/Login';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
       <ChakraProvider>
-        <React.StrictMode>
         <BrowserRouter>
         <App />
     <Routes>
@@ -30,7 +29,6 @@ root.render(
     </Route>
     </Routes>
   </BrowserRouter>
-  </React.StrictMode>
       </ChakraProvider>
     
 );

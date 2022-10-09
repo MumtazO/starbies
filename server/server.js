@@ -1,9 +1,9 @@
 const express = require("express");
 const SpotifyWebApi = require("spotify-web-api-node");
 const bodyParser = require("body-parser");
-const cors = cors();
+const cors = require('cors');
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -17,15 +17,16 @@ app.post("/", (req, res) => {
   });
   spotifyApi
     .authorizationCodeGrant(code)
-    .then((data) => {
+    .then(data => {
       res.json({
         accessToken: data.body.access_token,
         refreshToken: data.body.refresh_token,
         expiresIn: data.body.expires_in,
       });
     })
-    .catch(() => {
-      res.statusCode(400);
+    .catch(err => {
+      console.log(err)
+      res.sendStatus(400);
     });
 });
 
