@@ -8,7 +8,7 @@ export default function useAuth(code) {
   const [refreshToken, setRefreshToken] = useState()
   const [expiresIn, setExpiresIn] = useState()
 
-  console.log(refreshToken)
+  console.log("use auth refresh token", refreshToken)
 
   useEffect(() => {
     axios
@@ -19,11 +19,11 @@ export default function useAuth(code) {
         setAccessToken(res.data.accessToken)
         setRefreshToken(res.data.refreshToken)
         setExpiresIn(res.data.expiresIn)
-        window.history.pushState({}, null, "/")
+        // window.history.pushState({}, null, "/")
       })
       .catch(() => {
         console.log(code)
-        //window.location = "/"
+        window.location = "/"
       })
   }, [code])
 

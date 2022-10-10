@@ -28,6 +28,7 @@ function HomePage () {
             </Link>
 
             </SimpleGrid>
+            {/* <div>{code}</div> */}
         </div>
      );
 }
