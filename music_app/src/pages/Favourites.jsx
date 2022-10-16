@@ -1,9 +1,7 @@
-
-import "./favourites.css"
 import { Box } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
 import { Divider } from "@chakra-ui/react";
-import "./favourites.css";
+import "./Favourites.css";
 import { HiPhotograph } from "react-icons/hi";
 function Favourites () {
     return (  

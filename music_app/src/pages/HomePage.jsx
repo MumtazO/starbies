@@ -2,12 +2,10 @@ import "./HomePage.css";
 import { SimpleGrid } from '@chakra-ui/react'
 import { Box } from '@chakra-ui/react'
 import { Link } from "react-router-dom";
-import useAuth from "../components/useAuth";
+
 
 
 function HomePage () {
-    const code = new URLSearchParams(window.location.search).get('code')
-    const accessToken = useAuth(code)
     return ( 
         <div className="album">
             <SimpleGrid columns={3} gap={10} marginEnd={25} marginStart={20}

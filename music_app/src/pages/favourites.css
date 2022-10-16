@@ -1,11 +1,11 @@
-.favourites-page{
+.favourites-page {
     padding-top: 100px;
 }
+
 .album-header {
     display: flex;
     flex-direction: row;
 }
-
 
 .track-list {
     padding-left: 50px;
