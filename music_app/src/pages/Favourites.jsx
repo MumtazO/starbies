@@ -3,7 +3,27 @@ import { Image } from '@chakra-ui/react'
 import { Divider } from "@chakra-ui/react";
 import "./Favourites.css";
 import { HiPhotograph } from "react-icons/hi";
+import {  useParams } from 'react-router-dom';
+import {useEffect} from "react"
+import axios from "axios"
 function Favourites () {
+    let { id } = useParams();
+    let token = window.localStorage.getItem("token")
+    console.log(id)
+    useEffect(()=>{
+        axios.get(`https://api.spotify.com/v1/albums/${id}`, {
+             headers:{
+                 Authorization:'Bearer ' + token,
+                 
+             }
+             
+         }).then(response => {
+             console.log(token)
+             console.log("trying to get album data", response.data)
+            
+
+         })
+     },[token])
     return (  
         <div>
         <div className="favourites-page">

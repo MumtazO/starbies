@@ -25,7 +25,7 @@ root.render(
     <Route path="/homepage" element={<HomePage />}/>
     <Route path="about" element={<About />} />
     <Route path="privacypolicy" element={<PrivacyPolicy />} />
-    <Route path="favourites" element={<Favourites/>} />
+    <Route path="favourites/:id" element={<Favourites/>} />
     </Route>
     </Routes>
   </BrowserRouter>
